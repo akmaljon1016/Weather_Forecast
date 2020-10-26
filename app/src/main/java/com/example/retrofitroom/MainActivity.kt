@@ -35,7 +35,7 @@ class MainActivity : AppCompatActivity() {
                 } else {
                     Toast.makeText(this@MainActivity, "Network not availabel", Toast.LENGTH_SHORT)
                         .show()
-                    binding.swipeLayout.isRefreshing = false
+                    binding.swipeLayout.isRefreshing=true
                 }
             }
         })
