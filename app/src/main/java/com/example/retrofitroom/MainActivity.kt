@@ -12,7 +12,6 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout
 import com.bumptech.glide.Glide
 import com.example.retrofitroom.databinding.ActivityMainBinding
-import com.example.retrofitroom.databinding.ActivityMainBindingImpl
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
@@ -35,7 +34,7 @@ class MainActivity : AppCompatActivity() {
                 } else {
                     Toast.makeText(this@MainActivity, "Network not availabel", Toast.LENGTH_SHORT)
                         .show()
-                    binding.swipeLayout.isRefreshing=true
+                    binding.swipeLayout.isRefreshing=false
                 }
             }
         })
